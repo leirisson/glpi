@@ -50,7 +50,7 @@ jobs:
       - name: "Checkout"
         uses: "actions/checkout@v4"
       - name: "Restore dependencies cache"
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: |
             ${{ env.APP_CONTAINER_HOME }}/.composer/cache/
@@ -60,7 +60,7 @@ jobs:
             app_home_deps-${{ matrix.php-version }}-
             app_home_deps-
       - name: "Restore lint cache"
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: |
             /tmp/php-cs-fixer.glpi.cache
@@ -163,7 +163,7 @@ jobs:
       - name: "Checkout"
         uses: "actions/checkout@v4"
       - name: "Restore dependencies cache"
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: |
             ${{ env.APP_CONTAINER_HOME }}/.composer/cache/
