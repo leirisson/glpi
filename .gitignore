@@ -53,14 +53,3 @@ phpstan.neon
 /phpunit/config
 /.dump/
 .devcontainer/custom
-*.log
-coverage/
-.php-cs-fixer.cache
-.eslintcache
-.stylelintcache
-.env
-.env.*
-!.env.example
-.DS_Store
-Thumbs.db
-desktop.ini

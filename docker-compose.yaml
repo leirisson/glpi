@@ -2,19 +2,18 @@ services:
   app:
     container_name: "glpi-app"
     build:
-      context: ".docker/app"
+      context: "."
       args:
         PHP_VERSION: "8.4"
     restart: "unless-stopped"
-    volumes:
-      - ".:/var/www/glpi:rw"
-      - "custom_php_ini:/usr/local/etc/php/custom_conf.d/:rw"
     ports:
       - "8080:80"
     depends_on:
       - db
     extra_hosts:
       - "host.docker.internal:host-gateway"
+    volumes:
+      - "custom_php_ini:/usr/local/etc/php/custom_conf.d/:rw"
 
   db:
     container_name: "glpi-db"
@@ -69,7 +68,7 @@ services:
   # TODO: create a bin/console dev command that create a LDAP server object with
   # the information above to make things even easier ;)
   openldap:
-    image: bitnami/openldap:latest
+    image: public.ecr.aws/bitnami/openldap:latest
     environment:
       - LDAP_ADMIN_USERNAME=admin
       - LDAP_ADMIN_PASSWORD=adminpassword
