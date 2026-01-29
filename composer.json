@@ -27,7 +27,7 @@
         "ext-simplexml": "*",
         "ext-zlib": "*",
         "donatj/phpuseragentparser": "^1.7",
-        "elvanto/litemoji": "^4.1",
+        "elvanto/litemoji": "^5.2",
         "glpi-project/inventory_format": "^1.2",
         "guzzlehttp/guzzle": "^7.5",
         "guzzlehttp/psr7": "^2.4",
