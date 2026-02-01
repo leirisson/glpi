@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d5a84fe7dfadf692df2e5899a7a43a2e",
+    "content-hash": "6ab83d4bb3b825e1f71553c4b2956f86",
     "packages": [
         {
             "name": "brick/math",
@@ -173,25 +173,25 @@
         },
         {
             "name": "elvanto/litemoji",
-            "version": "4.1.0",
+            "version": "5.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/elvanto/litemoji.git",
-                "reference": "b48e23c94abd0b01a41907fff427b28d8513dc2e"
+                "reference": "859dbcaa31ac5eb99c0811a981ba9d9ca3dab1c1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/elvanto/litemoji/zipball/b48e23c94abd0b01a41907fff427b28d8513dc2e",
-                "reference": "b48e23c94abd0b01a41907fff427b28d8513dc2e",
+                "url": "https://api.github.com/repos/elvanto/litemoji/zipball/859dbcaa31ac5eb99c0811a981ba9d9ca3dab1c1",
+                "reference": "859dbcaa31ac5eb99c0811a981ba9d9ca3dab1c1",
                 "shasum": ""
             },
             "require": {
                 "ext-mbstring": "*",
-                "php": ">=7.3"
+                "php": ">=7.4"
             },
             "require-dev": {
-                "milesj/emojibase": "6.1.*",
-                "phpunit/phpunit": "9.4.*"
+                "milesj/emojibase": "^16.0.3",
+                "phpunit/phpunit": "^9.0"
             },
             "type": "library",
             "autoload": {
@@ -210,9 +210,9 @@
             ],
             "support": {
                 "issues": "https://github.com/elvanto/litemoji/issues",
-                "source": "https://github.com/elvanto/litemoji/tree/4.1.0"
+                "source": "https://github.com/elvanto/litemoji/tree/5.2.0"
             },
-            "time": "2021-11-18T22:21:54+00:00"
+            "time": "2025-07-15T04:24:11+00:00"
         },
         {
             "name": "firebase/php-jwt",
@@ -9392,5 +9392,5 @@
     "platform-overrides": {
         "php": "7.4.0"
     },
-    "plugin-api-version": "2.9.0"
+    "plugin-api-version": "2.6.0"
 }
